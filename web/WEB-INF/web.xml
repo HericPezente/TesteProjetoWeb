@@ -10,6 +10,39 @@
         </session-timeout>
     </session-config>
     
+    <error-page>
+        <exception-type> java.lang.Exception</exception-type>
+        <location>/erro.html</location>
+    </error-page>
+    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+    
+    <servlet>
+        <servlet-name>meuServlet</servlet-name>
+        <servlet-class>teste.agenda.servlet.MinhaServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>meuServlet</servlet-name>
+        <url-pattern>/minhaServlet</url-pattern>
+    </servlet-mapping>
+  
+      
+    <servlet>
+        <servlet-name>ServletContador</servlet-name>
+        <servlet-class>teste.agenda.servlet.Contador</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServletContador</servlet-name>
+        <url-pattern>/contagem</url-pattern>
+    </servlet-mapping>
+    
+    
+    
     
     
 </web-app>

@@ -41,7 +41,9 @@
         <url-pattern>/contagem</url-pattern>
     </servlet-mapping>
     
-    
+    <welcome-file-list>
+        <welcome-file>lista-contatos</welcome-file>
+    </welcome-file-list>
     
     
     

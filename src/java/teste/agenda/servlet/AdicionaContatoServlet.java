@@ -33,7 +33,7 @@ public class AdicionaContatoServlet extends HttpServlet{
         contato.setNome(req.getParameter("nome"));
         contato.setEmail(req.getParameter("email"));
         contato.setEndereco(req.getParameter("endereco"));
-        req.setAttribute("endereco","RUSSIA");
+
         
         try{
             Calendar dataNascimento= Calendar.getInstance();
